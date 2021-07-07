@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  
+  <head>
+    
+    <body style="background-color:rgb(7, 7, 7);"></body>
+    <div id="bookshelf">
+      <img src="images/Gaming PC.png" id="background_imgpc" />
+
+
+  </div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><title>PovaPc</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+    </main>
+  </body>
+
+       
+  </html>
+    <!-- Navbar Section -->‎
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img src="images/logo 2 (2).png" id="background_imglogo"  href="#home"  />
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+            
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a  href="#home"  class="navbar__links" id="home-page">Home</a>
+            
+            
+            
+            
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >What we offer</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup" onclick="myFunction()">Sign Up </a>
+            <script>
+            function myFunction() {
+    var x = document.getElementById("containe");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }</script>
+            
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Choose your <span>computer</span></h1>
+        <p class="hero__description"></p>
+        <button class="build" id="tell"><a href="#">‎‎‎‎‎‎Why?</a></button>
+        <script>const tell = document.getElementById("tell");
+        
+
+
+          tell.addEventListener("click", function () {
+          
+            window.scrollTo({
+              top: 1000,
+              left: 0,
+              behavior: "smooth"
+
+              
+            })
+          }); </script>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="main__content">
+          
+          <button class="main__btn" id="skipe"><a href="#"></a>Skip</a></button>
+          <script>const skipe = document.getElementById("skipe");
+
+
+            skipe.addEventListener("click", function () {
+            
+              window.scrollTo({
+                top: 20000,
+                left: 0,
+                behavior: "smooth"
+  
+                
+              })
+            });</script>
+          
+        </div>
+      </div>
+    </div>
+    <!-- parts -->
+    <h1 class="hero__heading"id="orgasmic">Buy a prebuilt  vs    <span>Build it yourself</span></h1>
+    <h1 class="hero__heading"id="pre"><br>Prebuilt:   <span></span></h1>
+    <h1 class="hero__heading"id="diy"><br>   <span>Build it yourself:</span></h1>
+    <h1 class="hero__heading"id="diy1"><span>Cost </span>effective</h1>
+    
+    
+
+    <div id="containe">
+      <form class="form" id="login">
+          <h1 class="form__title">Login</h1>
+          <div class="form__message form__message--error"></div>
+          <div class="form__input-group">
+              <input type="text" class="form__input" autofocus placeholder="Username or email">
+              <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+              <input type="password" class="form__input" autofocus placeholder="Password">
+              <div class="form__input-error-message"></div>
+          </div>
+          <button class="form__button" type="submit">Continue</button>
+          <p class="form__text">
+              <a href="#" class="form__link">Forgot your password?</a>
+          </p>
+          <p class="form__text">
+              <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+          </p>
+      </form>
+      <form class="form form--hidden" id="createAccount">
+          <h1 class="form__title">Create Account</h1>
+          <div class="form__message form__message--error"></div>
+          <div class="form__input-group">
+              <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+              <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+              <input type="text" class="form__input" autofocus placeholder="Email Address">
+              <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+              <input type="password" class="form__input" autofocus placeholder="Password">
+              <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+              <input type="password" class="form__input" autofocus placeholder="Confirm password">
+              <div class="form__input-error-message"></div>
+          </div>
+          <button class="form__button" type="submit">Continue</button>
+          <p class="form__text">
+              <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+          </p>
+      </form>
+  </div>
+  <script 
+ >  var x = document.getElementById("containe");
+ x.style.display = "none";</script>
+</body>
+
+     
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Join Our Team</h1>
+          <h2>Sign Up Today</h2>
+          <button class="main__btn"><a href="#">Sign Up</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/"></a>
+            <a href="/"></a> <a href="/"></a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/"></a>
+            <a href="/"></a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+           
+          </div>
+          <div class="footer__link--items">
+            <h2><a href="https://www.youtube.com/channel/UCfQ0ff9GGxlvhG6XFJa-wVg" target="_blank" rel="noopener noreferrer"></a>Social Media</h2>
+            <a href="/"></a> <a href="https://www.youtube.com/channel/UCfQ0ff9GGxlvhG6XFJa-wVg"></a>
+            <a href="https://www.youtube.com/channel/UCfQ0ff9GGxlvhG6XFJa-wVg" target="_blank" rel="noopener noreferrer">Youtube</a> <a href="/"></a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Pova</a>
+          </div>
+          <p class="website__rights">© Povacomputers 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"></a>
+         
+            <a href="https://www.instagram.com/povacomputers/" target="_blank" rel="noopener noreferrer" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCfQ0ff9GGxlvhG6XFJa-wVg" target="_blank" rel="noopener noreferrer" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+           
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+   
+  </body>
+</html>
