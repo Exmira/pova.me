@@ -6,6 +6,7 @@
    color: rgb(243, 7, 7);
 }
 body {
+  colour: blue;
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif; 
