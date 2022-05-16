@@ -7,7 +7,27 @@
 .info:hover + .infotext
 {
 display: block;
+}.head
+{
+    display: inline-block;
 }
+                    .hide {
+                        box-shadow: 20px 10px 40px 10px black;
+                        padding: 30px;
+                        position: absolute;
+                      display: none;
+                    }
+                        .myDIV
+                        {
+
+                            width: 100px;
+                        }
+                    .myDIV:hover + .hide {
+                        width: 300px;
+                      display: block;
+                      color: red;
+
+                    }
 
                   .submit
                   {
@@ -17,67 +37,56 @@ display: block;
                          font-size: 20px;
                       color: white;
                       padding: 10px;
-                      width: 80%;
-                      border-radius: 6px;
-                  }
-                  .submit:hover
-                  {
-                      border: 0px solid rgb(255, 255, 255);
-                      background-color: rgb(41, 41, 41);
-                      color: rgb(255, 255, 255);
-                  }
+                                                    width: 90%;
+                                                    border-radius: 6px;
+                                                }
+                                                .submit:hover
+                                                {
+                                                    border: 0px solid rgb(255, 255, 255);
+                                                    background-color: rgb(41, 41, 41);
+                                                    color: rgb(255, 255, 255);
+                                                }
 
-              .form-control
-              {
-                  border-radius: 6px;
-                  width: 90%;
-  background-color: #616161;
-                  color: white;
-                  padding: 10px;
-              }
-              .form-group {
-                  width: 100%;
-              
-                      padding: 10px;
-              }
-              .title-contact
-              {
-                      margin: auto;
-                  margin-top: 2%;
+                                            .form-control
+                                            {
+                                                border-radius: 6px;
+                                                width: 90%;
+                                            background-color: #616161;
+                                                color: white;
+                                                padding: 10px;
+                                            }
+                                            .form-group {
+                                                width: 100%;
+                                                    padding: 10px;
+                                            }
+                                            .title-contact
+                                            {
+                                                    margin: auto;
+                                                margin-top: 2%;
 
-                color: white;
+                                                color: white;
 
-              padding: 20px;
-              border-radius: 6px;
-              
-              }
-              .contact-form
-              {
-              
-              }
-              .row
-              {
-                  padding: 0px;
-                  margin: 0px;
-              }
-              .black-box
-              {
-                  margin: auto;
-                  margin-top: 4%;
-                  background-color: rgb(14, 14, 14);
-                color: white;
-              
-              padding: 9px;
-              border-radius: 6px;
-              
-              
-              
-              
-              }
-              .contact-us{
-              
-              
-              }
+                                            padding: 20px;
+                                            border-radius: 6px;
+
+                                            }
+
+                                            .row
+                                            {
+                                                padding: 0px;
+                                                margin: 0px;
+                                            }
+                                            .black-box
+                                            {
+                                                margin: auto;
+                                                margin-top: 4%;
+                                                background-color: rgb(14, 14, 14);
+                                                color: white;
+                                            padding: 9px;
+                                            border-radius: 6px;
+
+                                            }
+
               
 *{
     margin: 0;
