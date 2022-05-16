@@ -1,6 +1,84 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+.infotext
+{
+    display: none;
+}
+.info:hover + .infotext
+{
+display: block;
+}
 
+                  .submit
+                  {
+                      border: 0px solid rgb(255, 255, 255);
+                          background-color: crimson;
+                         font-family: "Poppins";
+                         font-size: 20px;
+                      color: white;
+                      padding: 10px;
+                      width: 90%;
+                      border-radius: 6px;
+                  }
+                  .submit:hover
+                  {
+                      border: 0px solid rgb(255, 255, 255);
+                      background-color: rgb(41, 41, 41);
+                      color: rgb(255, 255, 255);
+                  }
+
+              .form-control
+              {
+                  border-radius: 6px;
+                  width: 90%;
+  background-color: #616161;
+                  color: white;
+                  padding: 10px;
+              }
+              .form-group {
+                  width: 100%;
+              
+                      padding: 10px;
+              }
+              .title-contact
+              {
+                      margin: auto;
+                  margin-top: 2%;
+
+                color: white;
+
+              padding: 20px;
+              border-radius: 6px;
+              
+              }
+              .contact-form
+              {
+              
+              }
+              .row
+              {
+                  padding: 0px;
+                  margin: 0px;
+              }
+              .black-box
+              {
+                  margin: auto;
+                  margin-top: 4%;
+                  background-color: rgb(14, 14, 14);
+                color: white;
+              
+              padding: 9px;
+              border-radius: 6px;
+              
+              
+              
+              
+              }
+              .contact-us{
+              
+              
+              }
+              
 *{
     margin: 0;
     padding: 0;
@@ -301,7 +379,7 @@ padding: 10px;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover .box{
-    padding: 10px; 
+margin: 2px;
     transform: scale(1.01);
     -webkit-transform: scale(1.01);
     -moz-transform: scale(1.01);

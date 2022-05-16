@@ -25,7 +25,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Pova<span>.me</span></a></div>
+            <div class="logo"><a href="#">Pova</a></div>
             <ul class="menu">
             
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -33,7 +33,7 @@
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
 
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li><a href="#referral" class="menu-btn">Earn</a></li>
+
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -89,16 +89,13 @@
             <div class="serv-content "style="padding: px;">
                 <div class="card">
                     <div class="box">
-              
+
                         <a href="https://www.smartdoorrepair.com" target="_blank" class="text">Smartdoorrepair</a> 
-            
-        
-                    
+
                         <p>
-                           
+
                              <a href="https://www.smartdoorrepair.com" target="_blank" style="color: #ffaa00;">smartdoorrepair.com</a> 
-                       
-              
+
                         </p>
                     </div>
                 </div>
@@ -147,14 +144,14 @@
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
-            <div class="title">My packages + the pricing for them <br/> <br/><div style="font-size: 20px;">It does depend on the specific project, so these are ballpark figures. (Domain, hosting, ssl included) features are examples</div></div>
+            <div class="title">My packages + the pricing for them <br/> <br/><div style="font-size: 20px;">It does depend on the specific project, so these are ballpark figures. (Domain, hosting, ssl included)<strong></br></br>The descriptions I give are just example descriptions, any feature you want can be added ie. users can upload audio files.</div></div>
 <h4 class="title-2" style="margin-left: 12%;"> </h4>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
                        <h6> <i class="fas fa-code"></i></h6>
                         <div class="text">Portfolio site </div>
-                        <h4 class="">Contact function + 5 pages   </h4>
+                        <h4 class="">Contact feature and newsletter   </h4>
                         <br>
                     
                         <p>
@@ -170,7 +167,7 @@
                  
                         <i class="fas fa-chart-line"></i>
                         <div class="text">Business site  </div>
-                        <h4 class="">Review function + 20 pages </h4>
+                        <h4 class="">User authentication Newsletter,  </h4>
                         <br>
                         <p>  For example <a href="https://locksmiths.ie" target="_blank"style="color: #ffaa00;" >locksmiths.ie</a>  <br></p>
                         <br />
@@ -182,7 +179,7 @@
                         <i class="fas fa-paint-brush"></i>
                         <div class="text"> Expert site 
                         </div>
-                        <h4 class="">User authentication + 100 pages </h4>
+                        <h4 class="">Users can upload videos, images, audio.</h4>
                         <h6 class="text">  </h6>
                         <br />
                         <p> For example  <a class="" href="https://youtube.com" target="_blank"style="color: #ffaa00;">Youtube</a> </p>
@@ -308,17 +305,18 @@ I respond quickly to emails so feel free to contact me anytime
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fa-discord"></i>
+
              <div class="info">
+                 <br>
                                 <div class="head">Discord</div>
                                 <p class="subtitle">PovaPad#0371</p>
                             </div>
 
                         </div>
-         
+
 
                     </div></div>
-                
+
                 </body>
 
                 <style>
@@ -346,146 +344,64 @@ I respond quickly to emails so feel free to contact me anytime
                     </style> 
                 </div>
                 <div class="col-xl-5 black-box"style=" box-shadow: 0px 10px 40px 10px black;">
+                    <form action="https://postmail.invotes.com/send"
+                    method="post" id="email_form">
+                <div class="form-group">
+                    <h3> Your Email </h3>
+                    <input type="email" name="reply_to"
+                     class="form-control" required/>
+                </div>
+                <div class="form-group">
+                    <h3> Subject </h3>
 
-                <form onsubmit="sendEmail(); reset(); return false;">
-                  <div class="form-group">
-<h3> Email </h3>
-                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp" required>
-                    <small id="emailHelp" class="form-text text-muted"></small>    
-                  </div>
-                  <div class="form-group">
-                    <h3> Subject</h3>
-                    <input type="text" class="form-control" id="subject" required>
-                
-                  </div>
+                    <input type="text" name="subject" class="form-control"required />
+                </div>
+                <div class="form-group">
+                    <h3> Message </h3>
+                    <textarea name="text"  rows="15" class="form-control" required></textarea>
+                    <input type="hidden" name="access_token" value="ycjgrypmkmckch72knlp05ki" />
+                </div>
+                      <!-- return urls can be fully qualified -OR-
+                         start with / for root relative -OR-
+                         start with . for url relative --> 
+                    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+                    <!-- set the reply-to address -->
 
-                      <div class="form-group">
-                        <h3> Your Email </h3>
-                         <textarea type="text"class="form-control" id="body" rows="15"  required></textarea>
-     
-          
-    
-            <br>
-                  <button type="submit" class="submit">Submit</button>
+
+                    <!-- to append extra fields, use the extra_ prefix.
+                        Entries will be appended to your message body. -->
+                    <!-- <input type="text" name="extra_phone_number"
+                                placeholder="Phone Number" /> -->
+
+                    <!-- to split your message into 160 chars
+                         for an sms gateway -->
+                    <!-- <input type="hidden"
+                                name="sms_format" value="true" /> -->
+
+                    <input id="submit_form" type="submit" value="Send" class="submit" />
+
+
                 </form>
-
-                </h2>
-
-
-                </div></div></div>
 
                 <script type="text/javascript">
 
-                var body = document.getElementById("body");	
-                function sendEmail()
-                    {
-                        if (body.value == "ewqeq")
-                        {
-                            alert("Please enter a message");
+var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
+    form.addEventListener("submit", function (e) {
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+            alert("Message Sent! I will get back to you as soon as I can");
 
-                        }
-                Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "povabusiness@gmail.com",
-                    Password : "uonakkpfrvrchvhv",
-                    To : 'pova@pova.me',
-                    From : document.getElementById("email").value,
-                    Subject : document.getElementById("subject").value,
-                    Body : document.getElementById("subject").value,
-                }).then(
-                
-                  message => alert(message)
-                
-                );
-
-                    }
-
+        }, 1);
+    });
                 </script>
 
-                <style>
-                      .infotext
-  {
-      display: none;
-  }
-  .info:hover + .infotext
-  {
-display: block;
-  }
-
-                    .submit
-                    {
-                        border: 1px solid rgb(255, 255, 255);
-                            background-color: crimson;
-               
-                        color: white;
-                        padding: 10px;
-                        width: 90%;
-                        border-radius: 6px;
-                    }
-                    .submit:hover
-                    {
-                        border: 0px solid rgb(255, 255, 255);
-                        background-color: rgb(41, 41, 41);
-                        color: rgb(255, 255, 255);
-                    }
-
-                .form-control
-                {
-                    border-radius: 6px;
-                    width: 90%;
-    background-color: #616161;
-                    color: white;
-                    padding: 10px;
-                }
-                .form-group {
-                    width: 100%;
-                
-                        padding: 10px;
-                }
-                .title-contact
-                {
-                        margin: auto;
-                    margin-top: 2%;
-
-                  color: white;
- 
-                padding: 20px;
-                border-radius: 6px;
-                
-                }
-                .contact-form
-                {
-                
-                }
-                .row
-                {
-                    padding: 0px;
-                    margin: 0px;
-                }
-                .black-box
-                {
-                    margin: auto;
-                    margin-top: 4%;
-                    background-color: rgb(14, 14, 14);
-                  color: white;
-                
-                padding: 9px;
-                border-radius: 6px;
-                
-                
-                
-                
-                }
-                .contact-us{
-                
-                
-                }
-                
-                </style>
             </div>
         </div>
     </section>
- <section class="services" id="services">
+<!-- <section class="services" id="services">
         <div class="max-width">
             <h1 id="referral"style="font-size: 50px; text-align: center"> Referrals</h1>
           <h1> <i class="fa fa-user-plus" style="color: red; margin-left: 50%;"aria-hidden="true"></i></h1> 
@@ -500,18 +416,10 @@ display: block;
 
                </div>
  
-
-               <style>
-
-.contact-btn
-{
-    
-}
-               </style>
             </div>
        
         </div>
-    </section>
+    </section>-->
     <!-- footer section start -->
     <footer>
         <span><a href="https://www.youtube.com/c/Povai/videos">Pova</a> | <span class="far fa-copyright"></span> </span>
