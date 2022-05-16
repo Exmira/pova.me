@@ -11,83 +11,8 @@ display: block;
 {
     display: inline-block;
 }
-                    .hide {
-                        box-shadow: 20px 10px 40px 10px black;
-                        padding: 30px;
-                        position: absolute;
-                      display: none;
-                    }
-                        .myDIV
-                        {
+        
 
-                            width: 100px;
-                        }
-                    .myDIV:hover + .hide {
-                        width: 300px;
-                      display: block;
-                      color: red;
-
-                    }
-
-                  .submit
-                  {
-                      border: 0px solid rgb(255, 255, 255);
-                          background-color: crimson;
-                         font-family: "Poppins";
-                         font-size: 20px;
-                      color: white;
-                      padding: 10px;
-                                                    width: 90%;
-                                                    border-radius: 6px;
-                                                }
-                                                .submit:hover
-                                                {
-                                                    border: 0px solid rgb(255, 255, 255);
-                                                    background-color: rgb(41, 41, 41);
-                                                    color: rgb(255, 255, 255);
-                                                }
-
-                                            .form-control
-                                            {
-                                                border-radius: 6px;
-                                                width: 90%;
-                                            background-color: #616161;
-                                                color: white;
-                                                padding: 10px;
-                                            }
-                                            .form-group {
-                                                width: 100%;
-                                                    padding: 10px;
-                                            }
-                                            .title-contact
-                                            {
-                                                    margin: auto;
-                                                margin-top: 2%;
-
-                                                color: white;
-
-                                            padding: 20px;
-                                            border-radius: 6px;
-
-                                            }
-
-                                            .row
-                                            {
-                                                padding: 0px;
-                                                margin: 0px;
-                                            }
-                                            .black-box
-                                            {
-                                                margin: auto;
-                                                margin-top: 4%;
-                                                background-color: rgb(14, 14, 14);
-                                                color: white;
-                                            padding: 9px;
-                                            border-radius: 6px;
-
-                                            }
-
-              
 *{
     margin: 0;
     padding: 0;
@@ -95,6 +20,7 @@ display: block;
     text-decoration: none;
 background-color: #111;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -718,4 +644,80 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}            .hide {
+    box-shadow: 20px 10px 40px 10px black;
+    padding: 30px;
+    position: absolute;
+  display: none;
 }
+    .myDIV
+    {
+
+        width: 100px;
+    }
+.myDIV:hover + .hide {
+    width: 300px;
+  display: block;
+  color: red;
+
+}
+
+.submit
+{
+  border: 0px solid rgb(255, 255, 255);
+      background-color: crimson;
+     font-family: "Poppins";
+     font-size: 20px;
+  color: white;
+  padding: 10px;
+                    width: 90%;
+                    border-radius: 6px;
+                }
+                .submit:hover
+                {
+                    border: 0px solid rgb(255, 255, 255);
+                    background-color: rgb(41, 41, 41);
+                    color: rgb(255, 255, 255);
+                }
+
+            .form-control
+            {
+                border-radius: 6px;
+                width: 90%;
+            background-color: #616161;
+                color: white;
+                padding: 10px;
+            }
+            .form-group {
+                width: 100%;
+
+                    padding: 10px;
+            }
+            .title-contact
+            {
+                    margin: auto;
+                margin-top: 2%;
+
+                color: white;
+
+            padding: 20px;
+            border-radius: 6px;
+
+            }
+
+            .row
+            {
+                padding: 0px;
+                margin: 0px;
+            }
+            .black-box
+            {
+                margin: auto;
+                margin-top: 4%;
+                background-color: rgb(14, 14, 14);
+                color: white;
+            padding: 9px;
+            border-radius: 6px;
+
+            }
+
