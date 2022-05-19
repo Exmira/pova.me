@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
+
 <html lang="en">
 <head>
     
@@ -25,11 +25,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-
             <div class="logo"><a href="#">Pova </a></div>
-=======
-            <div class="logo"><a href="#">Pova<span>.me</span></a></div>
-
             <ul class="menu">
             
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -37,7 +33,7 @@
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
 
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li><a href="#referral" class="menu-btn">Earn</a></li>
+
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -93,16 +89,13 @@
             <div class="serv-content "style="padding: px;">
                 <div class="card">
                     <div class="box">
-              
+
                         <a href="https://www.smartdoorrepair.com" target="_blank" class="text">Smartdoorrepair</a> 
-            
-        
-                    
+
                         <p>
-                           
+
                              <a href="https://www.smartdoorrepair.com" target="_blank" style="color: #ffaa00;">smartdoorrepair.com</a> 
-                       
-              
+
                         </p>
                     </div>
                 </div>
@@ -151,14 +144,14 @@
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
-            <div class="title">My packages + the pricing for them <br/> <br/><div style="font-size: 20px;">It does depend on the specific project, so these are ballpark figures. (Domain, hosting, ssl included) features are examples</div></div>
+            <div class="title">My packages + the pricing for them <br/> <br/><div style="font-size: 20px;">It does depend on the specific project, so these are ballpark figures. (Domain, hosting, ssl included)<strong></br></br>The descriptions I give are just example descriptions, any feature you want can be added ie. users can upload audio files.</div></div>
 <h4 class="title-2" style="margin-left: 12%;"> </h4>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
                        <h6> <i class="fas fa-code"></i></h6>
                         <div class="text">Portfolio site </div>
-                        <h4 class="">Contact function + 5 pages   </h4>
+                        <h4 class="">Contact feature and newsletter   </h4>
                         <br>
                     
                         <p>
@@ -174,7 +167,7 @@
                  
                         <i class="fas fa-chart-line"></i>
                         <div class="text">Business site  </div>
-                        <h4 class="">Review function + 20 pages </h4>
+                        <h4 class="">User authentication Newsletter,  </h4>
                         <br>
                         <p>  For example <a href="https://locksmiths.ie" target="_blank"style="color: #ffaa00;" >locksmiths.ie</a>  <br></p>
                         <br />
@@ -186,11 +179,7 @@
                         <i class="fas fa-paint-brush"></i>
                         <div class="text"> Expert site 
                         </div>
-<<<<<<< HEAD
                         <h4 class="">Users can upload videos. </h4>
-=======
-                        <h4 class="">User authentication + 100 pages </h4>
->>>>>>> parent of 1bbc4fc (fixed contact feature, smtpjs does not allow gmail smtp anymore so went with Postmailinvotes)
                         <h6 class="text">  </h6>
                         <br />
                         <p> For example  <a class="" href="https://youtube.com" target="_blank"style="color: #ffaa00;">Youtube</a> </p>
@@ -290,7 +279,6 @@ I respond quickly to emails so feel free to contact me anytime
 
                 <div class="myDIV"><i class="fa fa-info-circle myDIV" style="font-size: 30px;"></i></div>
                 <div class="hide">             <div class="column right">
-                    
                     <p class="respond"></p>
                     <div class="icons">
                         <h3> My details </h3>
@@ -316,17 +304,18 @@ I respond quickly to emails so feel free to contact me anytime
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fa-discord"></i>
+
              <div class="info">
+                 <br>
                                 <div class="head">Discord</div>
                                 <p class="subtitle">PovaPad#0371</p>
                             </div>
 
                         </div>
-         
+
 
                     </div></div>
-                
+
                 </body>
 
                 <style>
@@ -354,146 +343,46 @@ I respond quickly to emails so feel free to contact me anytime
                     </style> 
                 </div>
                 <div class="col-xl-5 black-box"style=" box-shadow: 0px 10px 40px 10px black;">
+                    <form  action="https://formspree.io/f/xnqwlkan"
+                    method="POST">
+                        <div class="form-group">
+      <h3> Email </h3>
+                          <input type="text" class="form-control" name="email" id="email" aria-describedby="emailHelp" required>
+                          <small id="emailHelp" class="form-text text-muted"></small>    
+                        </div>
+                     <!---- <div class="form-group">
+                          <h3> Subject</h3>
+                          <input type="text" name="subject"class="form-control" id="subject" required>
+      
+                        </div> -->
+      
+                            <div class="form-group">
+                              <h3> Your Message </h3>
+                               <textarea type="text"class="form-control" id="body" name="message" rows="15"  required></textarea>
+                    <input type="text" name="_gotcha" style="display:none" />
 
-                <form onsubmit="sendEmail(); reset(); return false;">
-                  <div class="form-group">
-<h3> Email </h3>
-                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp" required>
-                    <small id="emailHelp" class="form-text text-muted"></small>    
-                  </div>
-                  <div class="form-group">
-                    <h3> Subject</h3>
-                    <input type="text" class="form-control" id="subject" required>
-                
-                  </div>
+                  <br>
+                  <input type="hidden" name="_next" value="/" />
+                        <button type="submit" class="submit">Send</button>
+                      </form>
 
-                      <div class="form-group">
-                        <h3> Your Email </h3>
-                         <textarea type="text"class="form-control" id="body" rows="15"  required></textarea>
-     
-          
-    
-            <br>
-                  <button type="submit" class="submit">Submit</button>
-                </form>
-
-                </h2>
-
-
-                </div></div></div>
-
-                <script type="text/javascript">
-
-                var body = document.getElementById("body");	
-                function sendEmail()
-                    {
-                        if (body.value == "ewqeq")
-                        {
-                            alert("Please enter a message");
-
-                        }
-                Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "povabusiness@gmail.com",
-                    Password : "uonakkpfrvrchvhv",
-                    To : 'pova@pova.me',
-                    From : document.getElementById("email").value,
-                    Subject : document.getElementById("subject").value,
-                    Body : document.getElementById("subject").value,
-                }).then(
-                
-                  message => alert(message)
-                
-                );
-
-                    }
-
-                </script>
-
-                <style>
-                      .infotext
-  {
-      display: none;
-  }
-  .info:hover + .infotext
-  {
-display: block;
-  }
-
-                    .submit
-                    {
-                        border: 1px solid rgb(255, 255, 255);
-                            background-color: crimson;
-               
-                        color: white;
-                        padding: 10px;
-                        width: 90%;
-                        border-radius: 6px;
-                    }
-                    .submit:hover
-                    {
-                        border: 0px solid rgb(255, 255, 255);
-                        background-color: rgb(41, 41, 41);
-                        color: rgb(255, 255, 255);
-                    }
-
-                .form-control
-                {
-                    border-radius: 6px;
-                    width: 90%;
-    background-color: #616161;
-                    color: white;
-                    padding: 10px;
-                }
-                .form-group {
-                    width: 100%;
-                
-                        padding: 10px;
-                }
-                .title-contact
-                {
-                        margin: auto;
-                    margin-top: 2%;
-
-                  color: white;
- 
-                padding: 20px;
-                border-radius: 6px;
-                
-                }
-                .contact-form
-                {
-                
-                }
-                .row
-                {
-                    padding: 0px;
-                    margin: 0px;
-                }
-                .black-box
-                {
-                    margin: auto;
-                    margin-top: 4%;
-                    background-color: rgb(14, 14, 14);
-                  color: white;
-                
-                padding: 9px;
-                border-radius: 6px;
-                
-                
-                
-                
-                }
-                .contact-us{
-                
-                
-                }
-                
-                </style>
             </div>
         </div>
     </section>
- <section class="services" id="services">
+    <script>
+$("#sendMessage").on("click", function() {
+
+    alert("Your message has been sent!");
+    $.ajax({
+        url: "//formspree.io/dynamicrealities@gmail.com", 
+        method: "POST",
+        data: {message: "hello!"},
+        dataType: "json"
+    });
+});
+
+        </script>
+<!-- <section class="services" id="services">
         <div class="max-width">
             <h1 id="referral"style="font-size: 50px; text-align: center"> Referrals</h1>
           <h1> <i class="fa fa-user-plus" style="color: red; margin-left: 50%;"aria-hidden="true"></i></h1> 
@@ -508,18 +397,10 @@ display: block;
 
                </div>
  
-
-               <style>
-
-.contact-btn
-{
-    
-}
-               </style>
             </div>
        
         </div>
-    </section>
+    </section>-->
     <!-- footer section start -->
     <footer>
         <span><a href="https://www.youtube.com/c/Povai/videos">Pova</a> | <span class="far fa-copyright"></span> </span>
