@@ -262,10 +262,14 @@ section .title::after{
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 .about .about-content .right{
     width: 55%;
-    
+
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -728,3 +732,41 @@ footer span a:hover{
 
             }
 
+            .languages {
+                box-shadow: 20px 10px 40px 10px black;
+                padding: 30px;
+                position: absolute;
+              display: none;
+margin: auto;
+              transition: ease 1s;
+            }
+            .language-image:hover{
+                opacity: 0.6;
+
+            }
+            .language-image:hover + .languages
+            {
+display: block;              transition: ease 1s;
+            }
+            .hide {
+                box-shadow: 20px 10px 40px 10px black;
+                padding: 30px;
+                position: absolute;
+              display: none;
+            }
+            .myDIV:hover + .hide {
+                width: 300px;
+              display: block;
+
+
+            }
+.hide
+{
+transition: ease 1s;
+}
+@media only screen and (max-width: 600px) {
+.contact
+{
+    width: 100%;
+}
+  }
